@@ -41,4 +41,11 @@ return require('packer').startup(function(use)
     use { "junegunn/fzf", run = ":call fzf#install()" }
     use 'junegunn/goyo.vim'
     use 'terryma/vim-multiple-cursors'
+    use {
+        'preservim/vim-markdown',
+        requires = {
+            {'godlygeek/tabular'}
+        }
+    }
+
 end)
