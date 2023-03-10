@@ -14,9 +14,6 @@ return require('packer').startup(function(use)
     -- see https://github.com/nvim-treesitter/nvim-treesitter/wiki/Colorschemes
     use 'sainnhe/sonokai'
 
-    -- coc
-    -- use {'neoclide/coc.nvim', branch = 'release'}
-
     -- lsp
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -71,6 +68,5 @@ return require('packer').startup(function(use)
             {'godlygeek/tabular'}
         }
     }
-    use 'edluffy/hologram.nvim'
 
 end)
