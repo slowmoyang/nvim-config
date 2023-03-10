@@ -31,5 +31,6 @@ vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes" -- suggested by coc
 vim.opt.isfname:append("@-@")
 vim.opt.scrolloff = 8
+vim.opt.foldenable = false
 
 vim.opt.termguicolors = true
