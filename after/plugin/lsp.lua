@@ -32,3 +32,10 @@ lsp.set_preferences({
 lsp.nvim_workspace()
 
 lsp.setup()
+
+
+-- https://neovim.io/doc/user/diagnostic.html
+vim.diagnostic.config({
+    virtual_text = true,
+    -- underline = true
+})
