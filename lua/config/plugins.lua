@@ -38,10 +38,6 @@ return require('packer').startup(function(use)
         }
     }
 
-    -- snippets
-    use 'SirVer/ultisnips'
-    use 'honza/vim-snippets'
-    
     -- git
     use 'tpope/vim-fugitive'
 

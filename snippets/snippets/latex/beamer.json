@@ -1,0 +1,19 @@
+{
+  "fragile": {
+    "prefix": "fragile_frame",
+    "body": [
+      "\\begin{frame}[fragile]{${1:title}}",
+      "\t${2:TODO}",
+      "\\end{frame}"
+    ]
+  },
+  "standout": {
+    "prefix": "standout",
+    "body": [
+      "\\begin{frame}[standout]",
+      "\t${2:Thank You}",
+      "\\end{frame}"
+    ],
+    "description": "standout"
+  }
+}
