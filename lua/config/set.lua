@@ -1,4 +1,7 @@
-vim.g.python3_host_prog = os.getenv("HOME") .. "/opt/mambaforge/envs/pynvim-py310/bin/python"
+vim.g.python3_host_prog = os.getenv("HOME") .. "/opt/micromamba/envs/pynvim-py310/bin/python"
+
+-- help disable-mouse
+-- vim.opt.mouse = ""
 
 vim.opt.guicursor = ""
 
@@ -13,6 +16,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.cmd [[autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2]]
 vim.cmd [[autocmd Filetype tex setlocal expandtab tabstop=2 shiftwidth=2]]
+vim.cmd [[autocmd Filetype json setlocal expandtab tabstop=2 shiftwidth=2]]
 
 --
 vim.opt.swapfile = false
@@ -34,3 +38,9 @@ vim.opt.scrolloff = 8
 vim.opt.foldenable = false
 
 vim.opt.termguicolors = true
+
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})
