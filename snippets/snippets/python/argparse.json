@@ -1,0 +1,14 @@
+{
+  "ArgumentPraser": {
+    "prefix": ["addp"],
+    "body": "parser = argparse.ArgumentParser()"
+  },
+  "add_argument": {
+    "prefix": ["addarg"],
+    "body": "parser.add_argument('${0:short_arg}', '${1:long_arg}', default=${2:None}, help='${3:Help text}')"
+  },
+  "parse_args": {
+    "prefix": ["pargs"],
+    "body": "args = parser.parse_args()"
+  }
+}
