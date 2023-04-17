@@ -64,5 +64,6 @@ return require('packer').startup(function(use)
             {'godlygeek/tabular'}
         }
     }
+    use {'edluffy/hologram.nvim'}
 
 end)
