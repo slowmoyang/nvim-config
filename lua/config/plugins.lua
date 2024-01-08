@@ -66,4 +66,6 @@ return require('packer').startup(function(use)
     }
     use {'edluffy/hologram.nvim'}
 
+
+    use 'knubie/vim-kitty-navigator'
 end)
