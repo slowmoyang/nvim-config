@@ -64,7 +64,6 @@ return require('packer').startup(function(use)
             {'godlygeek/tabular'}
         }
     }
-    use {'edluffy/hologram.nvim'}
 
     use {
         'knubie/vim-kitty-navigator',
