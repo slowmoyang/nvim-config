@@ -19,6 +19,10 @@
         "path": "./snippets/python/matplotlib.json"
       },
       {
+        "language": ["python"],
+        "path": "./snippets/python/torch.json"
+      },
+      {
         "language": ["plaintex", "tex"],
         "path": "./snippets/latex/latex.json"
       },

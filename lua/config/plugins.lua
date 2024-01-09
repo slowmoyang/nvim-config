@@ -10,6 +10,11 @@ return require('packer').startup(function(use)
     use 'nvim-treesitter/nvim-treesitter-context'
     use 'nvim-treesitter/playground'
 
+    use 'IndianBoy42/tree-sitter-just'
+
+    -- additional syntax highlighting
+    use 'rbberger/vim-singularity-syntax'
+
     -- colorsheme
     -- see https://github.com/nvim-treesitter/nvim-treesitter/wiki/Colorschemes
     use 'sainnhe/sonokai'

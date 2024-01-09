@@ -1,4 +1,15 @@
 {
+  "fig": {
+    "prefix": "fig",
+    "body": [
+    "\\begin{figure}",
+    "\t\\begin{center}",
+    "\t\t\\includegraphics[width=0.95\\textwidth]{./fig/${1}}",
+    "\t\\end{center}",
+    "\t\\caption{${2}}\\label{fig:${3}}",
+    "\\end{figure}"
+    ]
+  },
   "minimpage": {
     "prefix": "minipage",
     "body": [

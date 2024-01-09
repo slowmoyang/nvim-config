@@ -1,4 +1,4 @@
-vim.g.python3_host_prog = os.getenv("HOME") .. "/opt/micromamba/envs/pynvim-py310/bin/python"
+vim.g.python3_host_prog = os.getenv("HOME") .. "/opt/micromamba/envs/pynvim-py311/bin/python"
 
 -- help disable-mouse
 -- vim.opt.mouse = ""
