@@ -42,16 +42,16 @@ local cmp = require('cmp')
 local cmp_action = lsp_zero.cmp_action()
 local cmp_format = require('lsp-zero').cmp_format()
 
-require('luasnip.loaders.from_vscode').lazy_load()
+require('luasnip.loaders.from_vscode').lazy_load({paths = "./snippets"})
 
 -- https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/autocomplete.md#add-an-external-collection-of-snippets
 -- cmp-path: https://github.com/hrsh7th/cmp-path#setup
 cmp.setup({
   sources = {
     {name = 'nvim_lsp'},
-    {name = 'buffer'},
+    {name = 'buffer', keyword_length = 3},
     {name = 'path'},
-    {name = 'luasnip'},
+    {name = 'luasnip', keyword_length = 2},
   },
 
   mapping = cmp.mapping.preset.insert({
