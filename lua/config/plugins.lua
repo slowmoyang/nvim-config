@@ -61,4 +61,10 @@ require('lazy').setup({
   {'mbbill/undotree'},
   {'terrortylor/nvim-comment'},
   {'terryma/vim-multiple-cursors'},
+
+
+  {
+  'nvim-telescope/telescope.nvim', tag = '0.1.5',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  },
 })
